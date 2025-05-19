@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>会員ん登録フォーム</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>会員登録フォーム</h1>
+    <form id="registerForm" onsubmit="return ValidateForm()">
+        <label for="name">名前:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">メールアドレス:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="age">年齢:</label><br>
+        <input type="number" id="age" name="age"><br><br>
+
+        <button type="submit">登録</button>
+    </form>
+</body>
+</html>
