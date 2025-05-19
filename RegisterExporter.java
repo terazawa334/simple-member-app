@@ -4,9 +4,13 @@ import java.time.LocalDateTime;
 
 public class RegisterExporter{
     public static void main(String[] args) {
-        String name ="登録太郎";
-        String email = "toroku@example.com";
-        int age =28;
+        if (args.length < 3) {
+            System.out.println("使用法: java RegisterExporter 名前 メール 年齢");
+            return;
+        }
+        String name =args[0];
+        String email = args[1];
+        int age =Integer.parseInt(args[2]);
 
         String filename = "register.csv";
 
